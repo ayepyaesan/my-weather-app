@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="src/styles.css" rel="stylesheet" type="text/css">
+    <!--bootstrap css 1 js 1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--axios js 1-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <form class="form" id="search-form">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="search" class="form-control shadow-sm" id="search-input" placeholder="Type a city.." autofocus="on" autocomplete="off">
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" class="form-control btn btn-primary shadow-sm w-100" id="search-btn" value="Search">
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-success w-100" id="current-locationbtn">Current</button> 
+                    </div>
+                </div>
+            </form>
+            <h1 id="city" class="mt-3">Mandalay</h1>
+            <ul>
+                <li id="date"></li>
+                <li id="description"></li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <div class="clearfix">
+                        <div class="float-left">
+                            <span class="temperature" id="temperature">32</span>
+                            <span class="units">°C</span>
+                            <a href="#" id="celsius" class="btn btn-primary">°C</a> | <a href="#" id="fahernheit" class="btn btn-primary">°F</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>Humidity: <span id="humidity">32</span>%</li>
+                        <li>Wind: <span id="wind">1.45</span> km/h</li>
+                      </ul>
+                </div>  
+            </div>
+            <div class="weekly">
+                <p class="fw-bold mb-4 mt-4">📆Weekly Forecast</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <p>Today</p>
+                      <p>☀️22°-34°</p>
+                    </div>
+                    <div class="col">
+                      <p>Wed</p>
+                      <p>🌥️22°-34°</p>
+                    </div>
+                    <div class="col">
+                      <p>Thu</p>
+                      <p>🌧️22°-35°</p>
+                    </div>
+                    <div class="col">
+                      <p>Fri</p>
+                      <p>☀️21°-36°</p>
+                    </div>
+                    <div class="col">
+                      <p>Sat</p>
+                      <p>🌥️21°-38°</p>
+                    </div>
+                    <div class="col">
+                      <p>Sun</p>
+                      <p>☀️23°-40°</p>
+                    </div>
+                    <div class="col">
+                      <p>Mon</p>
+                      <p>🌧️23°-37°</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="lovewon.com" class="btn btn-primary">Source Code</a> By Aye Pyae
+        </div>
+        
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="src/index.js" type="text/javascript"></script>
+</body>
+</html>
